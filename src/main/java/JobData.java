@@ -50,7 +50,7 @@ public class JobData {
         // load data, if not already loaded
         loadData();
 
-        return allJobs;
+        return new ArrayList<>(allJobs);
     }
 
     /**
@@ -94,7 +94,6 @@ public class JobData {
         // load data, if not already loaded
         loadData();
 
-        // TODO - implement this method
         ArrayList<HashMap<String, String>> matchingJobs = new ArrayList<>();
 
         for (HashMap<String, String> job : allJobs) {
